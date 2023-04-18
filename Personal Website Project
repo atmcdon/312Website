@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Andrew's Personal Web Page</title>
+</head>
+<body>
+	<h1>Andrew McDonald</h1>
+	<p><strong>Description:</strong> I am a Student at UWT. I like to nerd out on <i>physics and mechanics.</i> I am enjoying learn about making <b>websites </b>with Professor Atwood! </p>
+	<h2>Classes I'm Taking Right Now</h2>
+	<ul>
+		<li>Class 1 Computer Networks And The Internet</li>
+		<li>Class 2 Introduction To Sociology</li>
+		<li>Class 3 Intro Statistics with Applications</li>
+	</ul>
+	<h2>My Favorite Movies/TVshows</h2>
+	<ol>
+		<li><a href="https://www.imdb.com/title/tt0088763/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_back%2520to%2520the%2520" target="_blank">Back to the Future</a></li>
+		<li><a href= " https://www.imdb.com/title/tt0062622/?ref_=nv_sr_srsg_0_tt_7_nm_1_q_2001" target="_blank">A Space Odyssey</a></li>
+		<li><a href="https://www.imdb.com/title/tt8111088/?ref_=nv_sr_srsg_1_tt_7_nm_0_q_mandiloian" target="_blank">The Mandalorian</a></li>
+	</ol>
+	<h2>Sad Computer "BlueScreen" and Happy Microsoft Bob</h2>
+	<a href="https://bristeeritech.com/it-security-blog/why-does-my-computer-blue-screen/" target="_blank">
+		<img src= "https://bristeeritech.com/wp-content/uploads/2020/02/Untitled-1.jpg" alt="Blue Screen" width="350" height="200">
+	</a>
+	<a href="https://www.artsy.net/article/artsy-editorial-life-death-microsoft-clippy-paper-clip-loved-hate" target="_blank">
+		<img src="https://d7hftxdivxxvm.cloudfront.net/?height=900&quality=80&resize_to=fit&src=https%3A%2F%2Fartsy-media-uploads.s3.amazonaws.com%2FrH70t3aO891il3BpB67x4Q%252FClippy%2Bthumb.jpg&width=900" alt="Clippy" width="300" height="200">
+	</a>
+	<h2>Interesting Fact about my friends</h2>
+	<p>Most of them dont know who microsoft Bob is.</p>
+</body>
+</html>
