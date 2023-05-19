@@ -1,57 +1,106 @@
 <!DOCTYPE html>
-<html>
+
 <head>
-	<title>Andrew's and Thomas's</title>
+
+  <title>Next Weeks Movies</title>
+  <link rel="stylesheet" href="Style.css" type="text/css">
+  <script src="script.js"></script>
+  
+  
 </head>
 <body>
-	<h1>Website</h1>
-	<p><strong>Description:</strong>Website project for class 312 <b> Team 13 </b> </p>
-	<h2>Classes I'm Taking Right Now</h2>
-	<ul>
-		<li>Class 1 Computer Networks And The Internet</li>
-		<li>Class 2 y</li>
-		<li>Class 3 </li>
-	</ul>
-	<h2>My Favorite Movies/TVshows</h2>
-	<ol>
-		<li><a href="https://www.imdb.com/title/tt0088763/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_back%2520to%2520the%2520" target="_blank">Back to the Future</a></li>
-		<li><a href= " https://www.imdb.com/title/tt0062622/?ref_=nv_sr_srsg_0_tt_7_nm_1_q_2001" target="_blank">A Space Odyssey</a></li>
-		<li><a href="https://www.imdb.com/title/tt8111088/?ref_=nv_sr_srsg_1_tt_7_nm_0_q_mandiloian" target="_blank">The Mandalorian</a></li>
-	</ol>
-	<h2>Sad Computer "BlueScreen" and Happy Microsoft Bob</h2>
-	<a href="https://bristeeritech.com/it-security-blog/why-does-my-computer-blue-screen/" target="_blank">
-		<img src= "https://bristeeritech.com/wp-content/uploads/2020/02/Untitled-1.jpg" alt="Blue Screen" width="350" height="200">
-	</a>
-	<a href="https://www.artsy.net/article/artsy-editorial-life-death-microsoft-clippy-paper-clip-loved-hate" target="_blank">
-		<img src="https://d7hftxdivxxvm.cloudfront.net/?height=900&quality=80&resize_to=fit&src=https%3A%2F%2Fartsy-media-uploads.s3.amazonaws.com%2FrH70t3aO891il3BpB67x4Q%252FClippy%2Bthumb.jpg&width=900" alt="Clippy" width="300" height="200">
-	</a>
-	<h2>Interesting Fact about my friends</h2>
-	<p>Most of them dont know who microsoft Bob is.</p>
-	<p>Test</p>
-	<p>Test2</p>
-	<h1>FORM</h1>
-		<form>
-		
-			action="http://example.com/join.php"
-			action="http://example.com/submitForm.java"
-			method="get"
-			<!--
-				Form controls 
-			-->
-			<h1>Username</h1>
-			<input type="text" name="username"
-				size="15" maxlength="30" />
 
-		</form>
-	
-	<h1>Form Example</h1>
-	<p>Your Favorite Movie:</p><br />
-		<input type="radio" name="movie"
-			value="Hello" checked="checked" /> Hello
-		<input type="radio" name="movie"
-			value="Bye" /> Bye
-	
-		</p>  
+
+  <div id="header" > 
+		<img src="Logo.png" alt="logo" />
+		Next Weeks Movies
+		<img src="Logo.png" alt="logo" />
 		
+  </div>
+	<ul class="navbar">
+		<li ><a class="active" href="index.html">Home Page</a></li>
+		<li><a href="movie_sug.html">Movie Suggestions</a></li>
+		<li><a href="discussions.html">Discussions</a></li>
+		<li><a href="about.html">About</a></li>
+	</ul>
+	  
+
+
+
+      <!-- homepage content here -->
+	  		<p>Next Week Movies is a unique online platform designed for movie enthusiasts who are eager to discover and discuss their favorite films. Our mission is to foster a diverse and inclusive community where people can suggest, explore, and engage in meaningful conversations about the movies they love. With an easy-to-use movie suggestion form and interactive discussion pages, users can share their thoughts, rate movies, and connect with like-minded film lovers. Whether you're an avid cinephile or a casual weekend moviegoer, Next Week Movies offers the perfect space to uncover new cinematic gems and immerse yourself in the world of film. Join us today and start your next movie adventure!<p>
+
+	<div id="disAndSug">
+		<!-- movie discussion page content here -->
+		<div class="discussion">
+			
+			<div class="movieInfo">
+				<img src="MovieExample.jpg" alt ="Movie_Example"/>
+				<h2>Back to the Future</h2>
+				<div class="ratings-wrapper">
+					<div data-productid="39" class="ratings">
+						<span data-rating="5">★</span>
+						<span data-rating="4">★</span>
+						<span data-rating="3">★</span>
+						<span data-rating="2">★</span>
+						<span data-rating="1">★</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="comment-box">
+				<div class="comment">
+					<p>This is the comment for the movie.</p>
+				</div>
+			</div>
+						
+		</div>
+		<!-- movie suggestion page content here -->
+		<div class="suggestion">	
+			<h2>Suggested Movies</h2>
+				<ul>
+				  <li>Movie Title 1</li>
+				  <li>Movie Title 2</li>
+				  <li>Movie Title 3</li>
+				  <li>Movie Title 4</li>
+				  <!-- Add more movie titles as needed -->
+				</ul>
+		</div>
+	</div>
+	
+	<div class="movieForm";> 
+		<fieldset>
+			<legend>Movie</legend>
+				<h1>Movie Suggestion Form</h1>
+				<form action="/submit-movie" method="post">
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" required>
+					<br>
+					<label for="movie-title">Movie Title:</label>
+					<input type="text" id="movie-title" name="movie_title" required>
+					<br>
+					<label for="release-year">Release Year:</label>
+					<input type="number" id="release-year" name="release_year" min="1900" max="2099" required>
+					<br>
+					<label for="genre">Genre:</label>
+					<select id="genre" name="genre">
+					  <option value="action">Action</option>
+					  <option value="adventure">Adventure</option>
+					  <option value="comedy">Comedy</option>
+					  <option value="drama">Drama</option>
+					  <option value="horror">Horror</option>
+					  <option value="sci-fi">Sci-Fi</option>
+					  <option value="romance">Romance</option>
+					  <option value="thriller">Thriller</option>
+					  
+					</select>
+					<br>
+					<label for="description">Movie Description:</label>
+					<textarea id="description" name="description" rows="4" cols="50" required></textarea>
+					<br>
+					<input type="submit" value="Submit">
+				</form>
+		  </fieldset>
+	</div>  
 </body>
 </html>
