@@ -1,1 +1,257 @@
 
+
+body {
+	font-family: Bahnschrift;
+	color: black;
+	min-width: 480px;
+	max-width: 1920px;
+	font-size: 100%;
+	
+}
+#header img{
+	
+	width: 80px;
+	height: 80px;
+	padding-top: 0px;
+	vertical-align: middle;
+	padding: 10px;
+	
+	
+}
+#header {
+	background-color: DarkGrey;
+	border-radius: 10px;
+	color: White;
+	text-shadow: 2px 2px 7px #111111;
+	text-align: center;
+	vertical-align: text-top;
+	height: 100px;
+	width: 100%;
+	font-family: Bahnschrift;
+	font-size: 2.5em;
+	
+	padding-top: 0px;
+	overflow: hidden;
+	
+	
+}
+
+ul.navbar{
+	list-style-type: none;
+	border-radius: 10px;
+	margin: px;
+	margin-top: 5px;
+	padding: 0px;
+	overflow: hidden;
+	background-color: Gainsboro
+	
+}
+ul.navbar li{
+	display: inline-block;
+	border-radius: 10px;
+	margin: 0px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 4px;
+	border-left: 2px solid DarkGrey;
+	
+}
+ul.navbar li a{
+	display: inline-block;
+	border-radius: 10px;
+	color: black;
+	text-align: center;
+	padding: 10px 14px;
+	text-decoration: none;
+	margin: 0px;
+}
+.active{
+	background-color: Ivory;
+}
+li a:hover:not(.active) {
+	background-color: SlateBlue;
+	color: LightSteelBlue;
+}
+
+/* Homepage Discussions */
+#disAndSug{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	flex-flow: row wrap;
+}
+#disAndSug div {
+	background-color: Gainsboro;
+	flex-wrap: wrap;
+	
+	margin: 10px;
+}
+.discussion h2{
+	text-align: center;
+	float:top;
+	
+}
+.discussion{
+	display: flex;
+	align-items: flex-start;
+	border: 2px solid DarkGrey;
+	
+	border-radius: 10px;
+	margin: 0px;
+	padding: 10px;
+	width: 400px;
+	max-width: 475px;
+	height: auto;
+	float: left;
+}
+.movie-info {
+	display: flex;
+	flex-direction: column;
+	
+  }
+
+.movieInfo img {
+	height: 120px;
+	width: auto;
+	float: left;
+
+}
+.comment-box {
+	margin-top: 20px;
+  }
+  
+  .comment-box h3 {
+	margin: 0;
+  }
+  
+  .comment {
+	border: 1px solid DarkGrey;
+	border-radius: 0px;
+	padding: 10px;
+	margin-top: 10px;
+  }
+
+
+/* Homepage suggestion movies */
+
+.suggestion{
+	
+	border: 2px solid DarkGrey;
+	height: 300px;
+	width: 400px;
+	border-radius: 10px;
+	margin: 0px;
+	padding: 10px;
+	max-width: 475px;
+
+	float: right;
+	}
+.suggestion h2{
+	text-align: center;
+}
+
+
+/* Star RATING system */
+
+.ratings-wrapper{
+   border: thin solid #999;
+   display: inline-block;
+   
+   float: left;
+   margin-bottom: 5px;
+   
+   
+}
+.ratings{
+   display: flex;
+   flex-direction: row-reverse;
+   
+   
+   
+}
+.ratings span{
+   cursor: pointer;
+   transition: color .2s;
+   font-size: 25px;
+}
+.ratings span:hover{
+   color: orange;
+}
+.ratings span:hover ~ span{
+   color: orange;
+}
+.ratings span[data-clicked]{
+   color: orange;
+}
+.ratings span[data-clicked] ~ span{
+   color: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Discussions CSS*/
+.movie-list {
+	list-style-type: none;
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+.movie {
+border: 1px solid #ccc;
+margin-bottom: 10px;
+}
+  
+.movie-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+background-color: lightgray;
+}
+  
+.movie-title {
+margin: 0;
+}
+  
+.expand-button {
+background-color: #ccc;
+border: none;
+color: white;
+padding: 5px 10px;
+cursor: pointer;
+}
+  
+.movie-details {
+	display: flex;
+	flex-direction: column;
+}
+.movie-details img {
+	max-width: 10%;
+  height: auto;
+}
+
+.comments-section {
+margin-left: auto;
+width: 50%;
+}
+
+.comment {
+border: 1px solid #ccc;
+padding: 10px;
+margin-bottom: 10px;
+}
+
+.add-comment {
+margin-top: 20px;
+}
+
