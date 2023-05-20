@@ -255,3 +255,7 @@ margin-bottom: 10px;
 margin-top: 20px;
 }
 
+/* About page CSS */
+.about-section .owners-section .references-section .footer {
+	max-width: 600px;
+}
