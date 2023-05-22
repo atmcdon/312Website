@@ -73,83 +73,141 @@ li a:hover:not(.active) {
 	color: LightSteelBlue;
 }
 
-/* Homepage Discussions */
-#disAndSug{
+
+/* Homepage Suggestion Discussions movies */
+
+#disAndSug {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 20px;
 	display: flex;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	flex-flow: row wrap;
+	justify-content: space-between;	
 }
-#disAndSug div {
-	background-color: Gainsboro;
-	flex-wrap: wrap;
-	
-	margin: 10px;
-}
-.discussion h2{
-	text-align: center;
-	float:top;
-	
-}
-.discussion{
-	display: flex;
-	align-items: flex-start;
-	border: 2px solid DarkGrey;
-	
-	border-radius: 10px;
-	margin: 0px;
+
+.discussion,
+.suggestion {
+	flex: 0 0 46%;
+	border: 3px solid DarkGrey;
 	padding: 10px;
-	width: 400px;
-	max-width: 475px;
-	height: auto;
-	float: left;
+  	border-radius: 5px;
+  	overflow: hidden;
 }
-.movie-info {
+
+h2 a {
+	color: black;
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+li {
 	display: flex;
-	flex-direction: column;
-	
-  }
+	margin-bottom: 20px;
+}
+
+.movieInfo {
+	flex: 0 0 30%;
+}
 
 .movieInfo img {
-	height: 120px;
-	width: auto;
-	float: left;
-
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
 }
-.comment-box {
-	margin-top: 20px;
-  }
-  
-  .comment-box h3 {
+
+.movieInfo h2 {
+	font-size: 18px;
 	margin: 0;
-  }
-  
-  .comment {
-	border: 1px solid DarkGrey;
-	border-radius: 0px;
-	padding: 10px;
+}
+
+.ratings-wrapper {
 	margin-top: 10px;
-  }
+}
 
+.ratings span {
+	color: #FFC107;
+	font-size: 16px;
+}
 
-/* Homepage suggestion movies */
-
-.suggestion{
-	
-	border: 2px solid DarkGrey;
-	height: 300px;
-	width: 400px;
-	border-radius: 10px;
-	margin: 0px;
+.comment-box,
+.synopsis-box {
+	margin-left: 20px;
+	background-color: lightgray;
 	padding: 10px;
-	max-width: 475px;
+	border: 1px solid DarkGrey;
+	border-radius: 5px;
+}
 
-	float: right;
-	}
-.suggestion h2{
+.comment-box p,
+.synopsis-box p {
+	margin: 0;
+}
+
+ /* Movie suggestion FORM */
+.movieForm {
+	max-width: 400px;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid lightgray;
+	border-radius: 5px;
+	background-color: lightgray;
+}
+
+h1 {
 	text-align: center;
 }
 
+label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+input[type="submit"]:focus {
+  outline: none;
+}
 
 /* Star RATING system */
 
@@ -159,15 +217,12 @@ li a:hover:not(.active) {
    
    float: left;
    margin-bottom: 5px;
-   
-   
+     
 }
 .ratings{
    display: flex;
    flex-direction: row-reverse;
-   
-   
-   
+
 }
 .ratings span{
    cursor: pointer;
@@ -186,16 +241,6 @@ li a:hover:not(.active) {
 .ratings span[data-clicked] ~ span{
    color: orange;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /* Discussions CSS*/
