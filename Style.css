@@ -69,7 +69,11 @@ ul.navbar li a{
 	background-color: Ivory;
 }
 li a:hover:not(.active) {
-	background-color: SlateBlue;
+	background-color: blue;
+	color: LightSteelBlue;
+}
+h2 a:hover:not(.active) {
+	background-color: blue;
 	color: LightSteelBlue;
 }
 
@@ -91,11 +95,17 @@ li a:hover:not(.active) {
 	padding: 10px;
   	border-radius: 5px;
   	overflow: hidden;
+	background-color: Gainsboro;
 }
 
 h2 a {
 	color: black;
 	text-decoration: none;
+	padding: 10px;
+	border: 2px solid Ivory;
+	border-radius: 10px;
+	background-color: Ivory;
+	
 }
 
 ul {
@@ -106,7 +116,11 @@ ul {
 li {
 	display: flex;
 	margin-bottom: 20px;
+	
+
 }
+
+
 
 .movieInfo {
 	flex: 0 0 30%;
